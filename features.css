@@ -1,3 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
 body {
     font-family: 'DM sans', sans-serif;
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0px;
+}
+
+.hero-image {
+    width: 100%;
+    line-height: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.features_text {
+    padding: 0px 28px 72px 28px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle {
+    position: absolute;
+    width: 128px;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    left: 29px;
+}
+
+.features_text h1 {
+    margin-top: 72px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    color: #FFFFFF;
+}
+
+.features_text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-top: 16px;
+}
+
+/* features first on tablet*/
+@media screen and (min-width: 768px) {
+    .features {
+        flex-direction: row-reverse;
+    }
+
+    .rectangle {
+        height: 128px;
+        width: 6px;
+        top: 35.3%;
+        left: 0px;
+    }
+
+    .features_text {
+        justify-content: center;
+    }
+
+    .features_text h1 {
+        margin: 0px;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.16667px;
+    }
+}
+
+/* features first part on desktop*/
+@media screen and (min-width:1440px) {
+    .features_text {
+        padding: 173px 111px;
+        width: 60%;
+    }
+
+    .features_text p {
+        margin-top: 21px;
+    }
 }
