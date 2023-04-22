@@ -129,6 +129,57 @@ body {
     margin-bottom: 0px;
 }
 
+/*features background-div*/
+.background-div {
+    padding: 0px 32px 64px 32px;
+    background-image: url(./assets/shared/mobile/bg-beta.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.background-div h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.background-div .rectangle {
+    margin-bottom: 64px;
+    position: unset;
+}
+
+.arrow_button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.arrow_button p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.arrow_button img {
+    filter: invert(100%) sepia(100%) saturate(25%) hue-rotate(101deg) brightness(107%) contrast(106%);
+}
+
+.arrow_button button {
+    background-color: transparent ;
+}
+
+.arrow_button p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
 
 /* features first part on tablet*/
 @media screen and (min-width: 768px) {
@@ -139,7 +190,7 @@ body {
     .rectangle {
         height: 128px;
         width: 6px;
-        top: 35.3%;
+        top: 32%;
         left: 0px;
     }
 
@@ -178,6 +229,42 @@ body {
         margin-bottom: 0px;
     }
 
+    /*features background div on tablet*/
+    .background-div {
+        min-height: 280px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 68px 40px 68px 0px;
+        position: relative;
+        justify-content: space-between;
+        background-image: url(./assets/shared/tablet/bg-beta.jpg);
+    }
+
+    .background-div h1 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.16667px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-left: 33px;
+        margin-bottom: 0px;
+    }
+
+    .background-div .rectangle {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 280px;
+    }
+
+    .background-div h1 {
+        width: 58.1%;
+    }
+    
+    .arrow_button {
+        width: 24.1%;
+    }
 }
 
 /* features first part on desktop*/
@@ -197,5 +284,20 @@ body {
         grid-template-columns: auto auto auto;
         column-gap: 30px;
         row-gap: 104px;
+    }
+
+    /*features backgound div on desktop*/
+    .background-div {
+        background-image: url(./assets/shared/desktop/bg-beta.jpg);
+        padding: 68px 165px 68px 0px;
+    }
+
+    .background-div h1 {
+        margin-left: 165px;
+        width: 36%;
+    }
+
+    .arrow_button {
+        width: unset;
     }
 }
