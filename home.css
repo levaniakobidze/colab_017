@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #000000;
 }
 html {
     overflow-x: hidden;
@@ -44,7 +43,6 @@ a {
     text-decoration: none;
     color: #000000;
 }
-
 .nav-menu{
     position: absolute;
     padding-top: 32px;
@@ -83,7 +81,62 @@ hr {
     display: block;
     transition: 0.3s
 }
-
+.intro-image, .beauti-image, .designed-image {
+    line-height: 0;
+}
+.intro-image img, .beauti-image img, .designed-image img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;  
+}
+.intro-text, .beauti-text, .designed-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 72px 24px 72px 33px;
+}
+.intro-text {
+    background-color: #000000;
+}
+.rectangle {
+    position: absolute;
+    width: 128px;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    top: 0px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-top: 16px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.text-arrow {
+    display: flex;
+    gap: 18px;
+    padding-top: 23px;
+}
+.beauti-text h1, .beauti-text p, .designed-text h1, .designed-text p, .beauti-text .text-arrow h3, .designed-text .text-arrow h3 {
+    color: #000;
+}
 @media (min-width: 768px) {
     header {
         padding: 0px 40px 0px 39px;
