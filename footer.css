@@ -1,0 +1,146 @@
+footer {
+    background-color: black;
+}
+.logo-light {
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+}
+.soc-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13.33px;
+    padding-top: 32px;
+}
+.fb-hover, .yt-hover, .twitter-hover, .pin-hover, .insta-hover {
+    display: none;
+}
+.foot-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 49px;
+}
+.f-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+.f-link a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+#f-text-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 119px;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 0px 56px 0px;
+}
+h4 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+
+@media (min-width: 768px) {
+    footer {
+        height: 284px;
+    }
+    .grid {
+        display: grid;
+        width: 689px;
+        padding: 64px 40px 64px 39px;
+        grid-template-columns: repeat(2, auto);
+        gap: 32px;
+    }
+    .logo-light {
+        justify-content: flex-start;
+        padding-top: 0px;
+        grid-area: 1/1/2/2;
+    }
+    .soc-media {
+        justify-content: flex-start;
+        padding-top: 40px;
+        grid-area: 3/1/4/2;
+    }
+    .foot-menu {
+        justify-content: flex-start;
+        padding-top: 0px;
+        grid-area: 2/1/3/2;
+    }
+    .f-menu {
+        flex-direction: row;
+        gap: 26px;
+
+    }
+    #f-text-arrow {
+        justify-content: flex-end;
+        padding-top: 0px;
+        grid-area: 1/2/2/3;
+    }
+    .copyright {
+        justify-content: flex-end;
+        padding: 40px 0px 0px 0px;
+        grid-area: 3/2/4/3;
+    }
+    
+}
+
+
+
+@media (min-width:1440px) {
+    
+/* SVG hovers on desktop size */
+.svg-fb:hover  .fb-0 {
+    display: none;
+}
+.svg-fb:hover  .fb-hover {
+    display: block;
+    cursor: pointer;
+}
+.svg-yt:hover  .yt-0 {
+    display: none;
+}
+.svg-yt:hover  .yt-hover {
+    display: block;
+    cursor: pointer;
+}
+.svg-twitter:hover  .twitter-0 {
+    display: none;
+}
+.svg-twitter:hover  .twitter-hover {
+    display: block;
+    cursor: pointer;
+}
+.svg-pin:hover  .pin-0 {
+    display: none;
+}
+.svg-pin:hover  .pin-hover {
+    display: block;
+    cursor: pointer;
+}
+ .svg-insta:hover  .insta-0 {
+    display: none;
+}
+.svg-insta:hover  .insta-hover {
+    display: block;
+    cursor: pointer;
+}
+
+
+}
