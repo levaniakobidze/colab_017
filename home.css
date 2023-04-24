@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #000000;
 }
 html {
     overflow-x: hidden;
@@ -44,7 +43,6 @@ a {
     text-decoration: none;
     color: #000000;
 }
-
 .nav-menu{
     position: absolute;
     padding-top: 32px;
@@ -83,7 +81,61 @@ hr {
     display: block;
     transition: 0.3s
 }
-
+.intro-image, .beauti-image, .designed-image {
+    line-height: 0;
+}
+.intro-image img, .beauti-image img, .designed-image img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;  
+}
+.intro-text, .beauti-text, .designed-text {
+    display: flex;
+    flex-direction: column;
+    padding: 72px 24px 72px 33px;
+}
+.intro {
+    background-color: #000000;
+}
+.rectangle {
+    position: absolute;
+    width: 128px;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    top: 0px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-top: 16px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.text-arrow {
+    display: flex;
+    gap: 18px;
+    padding-top: 23px;
+}
+.beauti-text h1, .beauti-text p, .designed-text h1, .designed-text p, .beauti-text .text-arrow h3, .designed-text .text-arrow h3 {
+    color: #000;
+}
 @media (min-width: 768px) {
     header {
         padding: 0px 40px 0px 39px;
@@ -122,6 +174,53 @@ hr {
     a {
         padding-right: 37px;
     }
+    .intro-image img, .beauti-image img, .designed-image img {
+        width: unset;
+    }
+    .intro, .designed-for {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .beautiful-stories {
+        display: flex;
+        justify-content: space-between;
+    }
+    .intro-text {
+        padding: 173px 54px;
+    }
+    .beauti-text {
+        padding: 136px 54px 135px 54px;
+    }
+    .designed-text {
+        padding: 160px 54px 159px 54px;
+    }
+    .rectangle {
+        position: absolute;
+        width: 6px;
+        height: 304px;
+        background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+        top: 245px;
+        left: 0px;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.16667px;
+        text-transform: uppercase;
+        width: 387px;
+    }
+    .beauti-text h1 {
+        width: 300px;
+    }
+    p {
+        margin-top: 21px;
+        width: 387px;
+    }
+    .text-arrow {
+        padding-top: 48px;
+    }
 }
 @media (min-width: 1440px) {
     header {
@@ -129,5 +228,14 @@ hr {
     }
     button {
         margin-left: 227px;
+    }
+    .intro-text {
+        padding: 173px 111px 173px 112px;
+    }
+    .beauti-text {
+        padding: 136px 111px 135px 112px;
+    }
+    .designed-text {
+        padding: 160px 111px 159px 112px;
     }
 }
