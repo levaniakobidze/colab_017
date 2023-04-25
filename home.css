@@ -44,6 +44,7 @@ a {
     color: #000000;
 }
 .nav-menu{
+    
     position: absolute;
     padding-top: 32px;
     Left: 100%;
@@ -56,6 +57,7 @@ a {
     transition: 0.5s;
 }
 .nav-menu.visible {
+    
     left: 0px;
 }
 hr {
@@ -93,9 +95,11 @@ hr {
     display: flex;
     flex-direction: column;
     padding: 72px 24px 72px 33px;
+    position: relative;
 }
 .intro {
     background-color: #000000;
+    
 }
 .rectangle {
     position: absolute;
@@ -171,7 +175,7 @@ h3 {
         line-height: 16px;
         letter-spacing: 2px;
     }
-    a {
+    .nav-link a {
         padding-right: 37px;
     }
     .intro-image img, .beauti-image img, .designed-image img {
