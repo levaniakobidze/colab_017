@@ -226,6 +226,74 @@ body {
     cursor: pointer;
     color: black;
   }
+
+  /*background div on mobile*/
+  .background-div {
+    background-image: url(./assets/shared/mobile/bg-beta.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0px;
+    position: relative;
+}
+
+.background-flex {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-div h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.background-div .rectangle {
+    position: absolute;
+    top: 0;
+    left: 8.8%;
+}
+
+.arrow_button {
+    display: flex;
+    align-items: center;
+}
+
+.arrow_button p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.arrow_button img {
+    filter: invert(100%) sepia(100%) saturate(25%) hue-rotate(101deg) brightness(107%) contrast(106%);
+}
+
+.arrow_button button {
+    background-color: transparent ;
+    width: 43px;
+    margin: 0px;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.arrow_button p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+
+  
 /*pricing features first part on tablet*/
 @media screen and (min-width: 768px) {
     .features {
@@ -299,6 +367,47 @@ body {
         top: 0px;
     }
 
+    /* background div on tablet*/
+    .background-div {
+        min-height: 280px;
+        flex-direction: row;
+        position: relative;
+        background-image: url(./assets/shared/tablet/bg-beta.jpg);
+        display: flex;
+        justify-content: center;
+    }
+
+    .background-flex {
+        display: flex;
+        flex-direction: row;
+        width: 688px;
+        justify-content: space-between;
+    }
+
+    .background-div h1 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.16667px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 0px;
+    }
+
+    .background-div .rectangle {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 280px;
+    }
+
+    .background-div h1 {
+        width: 58.1%;
+    }
+
+    .arrow_button {
+        flex-direction: row;
+    }
+
 
 }
 
@@ -355,6 +464,24 @@ body {
         width: 350px;
         top: 0px;
         left: 0px;
+    }
+
+    /*features backgound div on desktop*/
+    .background-div {
+        background-image: url(./assets/shared/desktop/bg-beta.jpg);
+        padding: 65px 0px;
+    }
+
+    .background-flex {
+        width: 1110px;
+    }
+
+    .background-div h1 {
+        width: 400px;
+    }
+
+    .arrow_button button {
+        margin: 16px;
     }
 
 }
