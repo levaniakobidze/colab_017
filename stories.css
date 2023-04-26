@@ -222,6 +222,10 @@ table {
     display: none;
 }
 
+.rectanglePhotoes16Hover {
+    display: none;
+}
+
 
 /*Tablet Version*/
 
@@ -334,20 +338,27 @@ table {
     
     .arrowImg {
         margin-left: 114px;
+    }
+
+    .arrowImg:hover {
         cursor: pointer;
     }
 
-
     .storiesHoverSunshine {
-        position:absolute;
+        position: absolute;
         display: inline;
-        opacity: 0;
-        width: 50%;
+        width: 50%;    
+        opacity: 0;    
     }
 
     .storiesHoverSunshine:hover {
-        opacity: 1;
+        position: absolute;
+        display: inline;
+        width: 50%; 
+        opacity: 1;   
+        cursor: pointer;  
     }
+
 
     /* stories 16 photoes for desctop  */
 
@@ -366,7 +377,7 @@ table {
 
     .photoes16 {
         padding-left: 0;
-        width:24.7cqmax;
+        width:24.8cqmax;
     }  
 
     .readStory {
