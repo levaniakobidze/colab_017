@@ -1,4 +1,10 @@
-footer {
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+    footer {
     background-color: black;
 }
 .logo-light {
@@ -33,6 +39,11 @@ footer {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
+    text-decoration: none;
+}
+.text-arrow {
+    display: flex;
+    gap: 18px;
 }
 #f-text-arrow {
     display: flex;
@@ -40,6 +51,15 @@ footer {
     justify-content: center;
     padding-top: 119px;
 }
+.text-arrow a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+}    
+
 .copyright {
     display: flex;
     align-items: center;
@@ -94,6 +114,7 @@ h4 {
         padding-top: 0px;
         grid-area: 1/2/2/3;
     }
+    
     .copyright {
         justify-content: flex-end;
         padding: 40px 0px 0px 0px;
@@ -144,7 +165,7 @@ h4 {
 }
 /* footer for desktop size */
 footer {
-    height: 250px;
+    height: 250pxც;
 }
 .grid {
     width: 1104px;
@@ -163,6 +184,13 @@ footer {
 }
 #f-text-arrow {
     grid-area: 1/3/2/4;
+}
+.text-arrow a:hover {
+    cursor: pointer;
+    
+}
+#f-text-arrow:hover a {
+    text-decoration: underline;
 }
 .soc-media {
     grid-area: 2/1/3/2;

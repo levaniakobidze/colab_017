@@ -5,84 +5,7 @@ body {
 html {
     overflow-x: hidden;
 }
-header {
-    height: 72px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 26px 0px 24px;   
-}
-button {
-    width: 310px;
-    height: 48px;
-    background-color: #000000;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 2.5px;
-    margin-bottom: 32px;
-    border: none;
-}
-.navbar { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.nav-link {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 2.5px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-a {
-    text-decoration: none;
-    color: #000000;
-}
-.nav-menu{
-    
-    position: absolute;
-    padding-top: 32px;
-    Left: 100%;
-    top: 72px;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100vw;
-    text-align: center;
-    /* transition: transform 0.3s ease-in-out; */
-    transition: 0.5s;
-}
-.nav-menu.visible {
-    
-    left: 0px;
-}
-hr {
-    width: 310px;
-    height: 1px;
-    background: #000000;
-    mix-blend-mode: normal;
-    opacity: 0.25;
-    margin-bottom: 20px;
-}
-.hamburger {
-    display: flex;
-    align-items: center;  
-}
-.hamburger img[alt=close-navigation] {
-    display: none;
-}
-.hamburger.visible .lines {
-    display: none;
-    transition: 0.3s
-}
-.hamburger.visible .close {
-    display: block;
-    transition: 0.3s
-}
+
 .intro-image, .beauti-image, .designed-image {
     line-height: 0;
 }
@@ -125,13 +48,14 @@ p {
     opacity: 0.6;
     margin-top: 16px;
 }
-h3 {
+.text-arrow h3 {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
     color: #ffffff;
 }
+
 .text-arrow {
     display: flex;
     gap: 18px;
@@ -141,43 +65,7 @@ h3 {
     color: #000;
 }
 @media (min-width: 768px) {
-    header {
-        padding: 0px 40px 0px 39px;
-    }
-    .hamburger {
-        display: none;
-    }
-    hr {
-        display: none;
-    }
-    button {
-        width: 158px;
-        height: 40px;
-        margin: 0px;
-        margin-left: 16px;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 2px;
-    }
-    .nav-menu {
-        position: unset;
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: max-content;
-        height: max-content;
-    }
-    .nav-link {
-        padding: 0px;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 2px;
-    }
-    .nav-link a {
-        padding-right: 37px;
-    }
+    
     .intro-image img, .beauti-image img, .designed-image img {
         width: unset;
     }
@@ -241,5 +129,11 @@ h3 {
     }
     .designed-text {
         padding: 160px 111px 159px 112px;
+    }
+    .text-arrow:hover {
+        cursor: pointer;
+    }
+    .text-arrow:hover h3 {
+        text-decoration: underline;
     }
 }
