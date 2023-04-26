@@ -149,6 +149,80 @@ table {
     display: none;
 }
 
+ /* stories 16 photoes for mobile  */
+
+.photoes16 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%);
+}
+
+.mobileStories16Photoes {
+    width: 100%;
+}
+
+ .readStory {
+    display: flex;
+    align-items: center;
+    width: 291.67px;
+    margin-bottom: 40px;
+} 
+.readStory p {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;  
+    margin-left: 0; 
+}
+
+.readStory img {
+    height: 12px;
+    width: 42px;
+    margin-left: 156px;
+}
+
+.photoes16 p, .photoes16 h2, .storiesRectangle {
+    width: 291.67px;
+}
+
+.photoes16Author, .photoes16Date {
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16.93px;
+} 
+
+.photoes16Date {
+    margin-top: 215px;
+    margin-bottom: 4px;
+}
+
+.photoes16 h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.storiesRectangle {
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.storiesPhotoes16 section {
+    display: flex;
+    align-items: flex-end;
+}
+
+.tabletStories16Photoes, .desctopStories16Photoes {
+    display: none;
+}
+
+
 /*Tablet Version*/
 
 @media screen and (min-width: 768px) {
@@ -203,6 +277,36 @@ table {
     .storiesHoverSunshine {
         display: none;
     }
+
+     /* stories 16 photoes for tablet  */
+
+    .mobileStories16Photoes {
+        display: none;
+    }
+
+    .tabletStories16Photoes {
+        display: inline;
+        width: 100%;
+    }
+
+    .storiesPhotoes16 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .photoes16 {
+        width:100%;  
+        align-items: flex-start;
+        padding-left: 42.67px;
+    }
+
+    .readStory {
+        width: 299px;
+    } 
+
+    .photoes16 p, .photoes16 h2, .storiesRectangle {
+        width: 299px;
+    }    
 }
 
 /*Desctop Version*/
@@ -244,6 +348,66 @@ table {
     .storiesHoverSunshine:hover {
         opacity: 1;
     }
+
+    /* stories 16 photoes for desctop  */
+
+    .tabletStories16Photoes{
+        display: none;
+    }
+
+    .desctopStories16Photoes {
+        display: inline;
+        width: 100%;
+    }
+
+    .storiesPhotoes16 {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .photoes16 {
+        padding-left: 0;
+        width:24.7cqmax;
+    }  
+
+    .readStory {
+        width: 320px;
+    } 
+
+    .readStoryP {
+        width: fit-content;
+    }
+
+    .photoes16 p, .photoes16 h2, .storiesRectangle {
+        width: 280px;
+        margin-left: 40px;
+    } 
+
+    .readStory img {
+        width: 41.86px;
+        margin-left: 147px;
+    }
+
+    .storiesPhotoes16 section {
+        bottom: 0;
+        position: relative;
+        transition: 0.2s;
+    } 
+    .rectanglePhotoes16Hover {
+        position: absolute;
+        width: 100%;
+        display: none;    
+    }
+
+    .storiesPhotoes16 section:hover {
+        bottom: 20px;
+        cursor: pointer;
+        position: relative;     
+    }
+
+    .storiesPhotoes16 section:hover .rectanglePhotoes16Hover{
+        display: inline;
+    }
+
 }
 
 
