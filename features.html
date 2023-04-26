@@ -6,13 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./features.css" />
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <script src="./app.js" defer></script>
     <title>Document</title>
   </head>
+
   <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/home/SVGs/logo.svg" alt="logo:Photosnap">
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-link"><a href="./stories.html">STORIES</a></li>
+          <li class="nav-link"><a href="./features.html">FEATURES</a></li>
+          <li class="nav-link"><a href="">PRICING</a></li>
+          <hr>
+          <button class="get_invite">GET AN INVITE</button>
+        </ul>
+        <div class="hamburger">
+          <img class="lines" src="./assets/home/SVGs/menu.svg" alt="navigation-icon">
+          <img class="close" src="./assets/home/SVGs/close.svg" alt="close-navigation">
+        </div>
+      </nav>
+    </header>
+
     <section class="features">
       <div class="hero-image">
         <picture>
@@ -68,10 +89,12 @@
 
     <div class="background-div">
       <div class="rectangle"></div>
-      <h1>We're in beta. Get your invite today!</h1>
-      <div class="arrow_button">
-        <p>GET AN INVITE</p>
-        <button><img src="./assets/shared/desktop/arrow.svg" alt=""></button>
+      <div class="background-flex">
+        <h1>We're in beta. Get your invite today!</h1>
+        <div class="arrow_button">
+          <p>GET AN INVITE</p>
+          <button><img src="./assets/shared/desktop/arrow.svg" alt=""></button>
+      </div>
       </div>
     </div>
 
@@ -171,5 +194,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
