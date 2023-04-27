@@ -69,6 +69,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 64px 32px 91px 32px;
 }
 
@@ -103,6 +104,10 @@ body {
     width: 91px;
 }
 
+.card {
+    width: 310px;
+}
+
 .card h1 {
     font-style: normal;
     font-weight: 700;
@@ -131,10 +136,20 @@ body {
 
 /*features background-div*/
 .background-div {
-    padding: 0px 32px 64px 32px;
     background-image: url(./assets/shared/mobile/bg-beta.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0px;
+    position: relative;
+}
+
+.background-flex {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
 }
 
 .background-div h1 {
@@ -148,14 +163,14 @@ body {
 }
 
 .background-div .rectangle {
-    margin-bottom: 64px;
-    position: unset;
+    position: absolute;
+    top: 0;
+    left: 8.8%;
 }
 
 .arrow_button {
     display: flex;
     align-items: center;
-    gap: 16px;
 }
 
 .arrow_button p:hover {
@@ -169,6 +184,10 @@ body {
 
 .arrow_button button {
     background-color: transparent ;
+    width: 43px;
+    margin: 0px;
+    cursor: pointer;
+    margin-left: 16px;
 }
 
 .arrow_button p {
@@ -207,7 +226,7 @@ body {
 
     /*features six card section on tablet*/
     .cards_section {
-        padding: 112px 40px 114px 39px;
+        padding: 112px 0px 114px 0px;
         display: grid;
         grid-template-columns: auto auto;
         column-gap: 13px;
@@ -223,6 +242,10 @@ body {
     }
 
     .card {
+        width: 339px;
+    }
+
+    .card {
         justify-content: unset;
     }
 
@@ -233,13 +256,18 @@ body {
     /*features background div on tablet*/
     .background-div {
         min-height: 280px;
-        align-items: center;
+        flex-direction: row;
+        position: relative;
+        background-image: url(./assets/shared/tablet/bg-beta.jpg);
+        display: flex;
+        justify-content: center;
+    }
+
+    .background-flex {
         display: flex;
         flex-direction: row;
-        padding: 68px 40px 68px 0px;
-        position: relative;
+        width: 688px;
         justify-content: space-between;
-        background-image: url(./assets/shared/tablet/bg-beta.jpg);
     }
 
     .background-div h1 {
@@ -248,7 +276,6 @@ body {
         letter-spacing: 4.16667px;
         text-transform: uppercase;
         color: #FFFFFF;
-        margin-left: 33px;
         margin-bottom: 0px;
     }
 
@@ -264,7 +291,7 @@ body {
     }
     
     .arrow_button {
-        width: 24.1%;
+        flex-direction: row;
     }
 }
 
@@ -287,18 +314,25 @@ body {
         row-gap: 104px;
     }
 
+    .card {
+        width: 350px;
+    }
+
     /*features backgound div on desktop*/
     .background-div {
         background-image: url(./assets/shared/desktop/bg-beta.jpg);
-        padding: 68px 165px 68px 0px;
+        padding: 65px 0px;
+    }
+
+    .background-flex {
+        width: 1110px;
     }
 
     .background-div h1 {
-        margin-left: 165px;
-        width: 36%;
+        width: 400px;
     }
 
-    .arrow_button {
-        width: unset;
+    .arrow_button button {
+        margin: 16px;
     }
 }
