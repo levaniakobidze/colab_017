@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     position: relative;
     gap: 0px;
+    background-color: black;
 }
 
 .hero-image {
@@ -66,6 +67,165 @@ body {
 }
 
 
+/*pricing section on mobile*/
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment h1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: #000000;
+}
+
+#yearly {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.switch {
+    display: inline-flex;
+    margin: 0 10px;
+  }
+  .switch input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  .switch input[type=checkbox]:checked + label {
+    background: black;
+  }
+  .switch input[type=checkbox]:checked + label::after {
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+    background: white;
+  }
+  .switch label {
+    cursor: pointer;
+    width: 64px;
+    height: 32px;
+    background: #DFDFDF;
+    display: block;
+    border-radius: 24px;
+    position: relative;
+  }
+  .switch label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background: black;
+    border-radius: 16px;
+    transition: 0.3s;
+  }
+
+  .three-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 22px 40px 21px;
+    width: 318px;
+  }
+
+  .card h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 18px;
+  }
+
+  .card h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .card p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+
+  .card button {
+    width: 245px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    background-color: black;
+  }
+
+  .one {
+    background: #F5F5F5;
+    margin-bottom: 24px;
+  }
+
+  .two {
+    background: black;
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .three {
+    background: #F5F5F5;
+  }
+
+  .rectangle-card {
+    width: 318px;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .two h1, .two h2, .two p {
+    color: white;
+  }
+
+  .two button {
+    background-color: white;
+    color: black;
+  }
+
+  .card button:hover {
+    background: #DFDFDF;
+    cursor: pointer;
+    color: black;
+  }
 /*pricing features first part on tablet*/
 @media screen and (min-width: 768px) {
     .features {
@@ -89,6 +249,57 @@ body {
         line-height: 48px;
         letter-spacing: 4.16667px;
     }
+
+    /*pricing section on tablet*/
+    .payment {
+        margin-top: 116px;
+    }
+
+    .card {
+        width: 689px;
+        padding: 42px 48px 40px 40px;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card button {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+    }
+
+    .plan {
+        width: 270px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .plan p {
+        text-align: unset;
+        margin-bottom: 72px;
+    }
+
+    .per-month-div {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+    }
+
+    .per-month-div p {
+        align-self: flex-end;
+        margin-right: 5px;
+    }
+
+    .rectangle-card {
+        height: 272px;
+        width: 6px;
+        left: 0px;
+        top: 0px;
+    }
+
+
 }
 
 /*pricing features first part on desktop*/
@@ -102,15 +313,48 @@ body {
         margin-top: 21px;
     }
 
-    /*features six card section on desktop*/
-    .cards_section {
-        padding: 160px 165px;
-        grid-template-columns: auto auto auto;
-        column-gap: 30px;
-        row-gap: 104px;
+    /*pricing section on desktop*/
+
+    .three-card {
+        flex-direction: row;
+        width: 1110px;
+        justify-content: space-between;
     }
 
     .card {
         width: 350px;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
     }
+
+    .plan, .per-month-div {
+        align-items: center;
+        align-self: center;
+    }
+
+    .plan p {
+        text-align: center;
+    }
+
+    .per-month-div p {
+        align-self: center;
+    }
+
+    .card button {
+        position: unset;
+    }
+
+    .two {
+        padding-top: 88px;
+        padding-bottom: 71px;
+    }
+
+    .rectangle-card {
+        height: 6px;
+        width: 350px;
+        top: 0px;
+        left: 0px;
+    }
+
 }
