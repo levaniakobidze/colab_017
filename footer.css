@@ -66,7 +66,7 @@ body {
     justify-content: center;
     padding: 34px 0px 56px 0px;
 }
-h4 {
+.copyright h4 {
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
