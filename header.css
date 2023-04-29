@@ -67,7 +67,7 @@ button {
     transition: 0.5s;
 }
 .nav-menu.visible {
-    
+    z-index: 2;
     left: 0px;
 }
 hr {
