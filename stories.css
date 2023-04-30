@@ -153,15 +153,12 @@ table {
 
 .photoes16 {
     position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items:center; 
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%);
+    margin-left: 41.67px;
 }
 
 .mobileStories16Photoes {
     width: 100%;
+    filter: brightness(80%);
 }
 
  .readStory {
@@ -171,7 +168,6 @@ table {
     margin-bottom: 40px;
 } 
 .readStory p {
-    display: inline;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
@@ -182,11 +178,7 @@ table {
 .readStory img {
     height: 12px;
     width: 42px;
-    margin-left: 156px;
-}
-
-.photoes16 p, .photoes16 h2, .storiesRectangle {
-    width: 291.67px;
+    margin-left: 152px;
 }
 
 .photoes16Author, .photoes16Date {
@@ -197,7 +189,6 @@ table {
 } 
 
 .photoes16Date {
-    margin-top: 215px;
     margin-bottom: 4px;
 }
 
@@ -218,11 +209,7 @@ table {
     align-items: flex-end;
 }
 
-.tabletStories16Photoes, .desctopStories16Photoes {
-    display: none;
-}
-
-.rectanglePhotoes16Hover {
+.tabletStories16Photoes, .desctopStories16Photoes, .rectanglePhotoes16Hover {
     display: none;
 }
 
@@ -291,6 +278,7 @@ table {
     .tabletStories16Photoes {
         display: inline;
         width: 100%;
+        filter: brightness(80%);
     }
 
     .storiesPhotoes16 {
@@ -299,18 +287,13 @@ table {
     }
 
     .photoes16 {
-        width:100%;  
-        align-items: flex-start;
-        padding-left: 42.67px;
+        margin-left: 42.67px;
     }
 
     .readStory {
         width: 299px;
     } 
-
-    .photoes16 p, .photoes16 h2, .storiesRectangle {
-        width: 299px;
-    }    
+   
 }
 
 /*Desctop Version*/
@@ -369,6 +352,7 @@ table {
     .desctopStories16Photoes {
         display: inline;
         width: 100%;
+        filter: brightness(80%);
     }
 
     .storiesPhotoes16 {
@@ -376,21 +360,15 @@ table {
     }
 
     .photoes16 {
-        padding-left: 0;
-        width:24.8cqmax;
+        margin-left: 40px;
     }  
 
     .readStory {
-        width: 320px;
+        width: 280px; 
     } 
-
-    .readStoryP {
-        width: fit-content;
-    }
 
     .photoes16 p, .photoes16 h2, .storiesRectangle {
         width: 280px;
-        margin-left: 40px;
     } 
 
     .readStory img {
