@@ -159,7 +159,6 @@ table {
 .mobileStories16Photoes {
     width: 100%;
     filter: brightness(80%);
-    z-index: -1;
 }
 
  .readStory {
@@ -280,7 +279,6 @@ table {
         display: inline;
         width: 100%;
         filter: brightness(80%);
-        z-index: -1;
     }
 
     .storiesPhotoes16 {
@@ -355,7 +353,6 @@ table {
         display: inline;
         width: 100%;
         filter: brightness(80%);
-        z-index: -1;
     }
 
     .storiesPhotoes16 {
