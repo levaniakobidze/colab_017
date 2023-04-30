@@ -234,8 +234,8 @@ section picture::before {
 
 
     .stories-cards {
-        
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: none;
         
     }
     .description {
