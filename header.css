@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 body {
     font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
 }
 html {
     overflow-x: hidden;
@@ -13,6 +14,10 @@ header {
     justify-content: space-between;
     padding: 0px 26px 0px 24px;   
 }
+.logo {
+    cursor: none;
+
+}
 button {
     width: 310px;
     height: 48px;
@@ -23,13 +28,22 @@ button {
     line-height: 20px;
     text-align: center;
     letter-spacing: 2.5px;
-    margin-bottom: 32px;
     border: none;
+}
+.get_invite {
+    margin-bottom: 32px;
+}
+@keyframes disappear {
+    from {top: 72px;}
+    to {top:-325px}
 }
 .navbar { 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.navbar ul {
+    list-style: none;
 }
 .nav-link {
     font-weight: 700;
@@ -57,18 +71,22 @@ button {
     
     position: absolute;
     padding-top: 32px;
-    Left: 100%;
-    top: 72px;
+    Left: 0px;
+    top: -100%;
     flex-direction: column;
     background-color: #ffffff;
     width: 100vw;
     text-align: center;
     /* transition: transform 0.3s ease-in-out; */
-    transition: 0.5s;
+    transition: 2s;
 }
 .nav-menu.visible {
-    
+    z-index: 2;
     left: 0px;
+    top: 72px;
+}
+.logo {
+    z-index: 3;
 }
 hr {
     width: 310px;
@@ -107,11 +125,13 @@ hr {
     button {
         width: 158px;
         height: 40px;
-        margin: 0px;
-        margin-left: 16px;
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 2px;
+    }
+    .get_invite {
+        margin: 0px;
+        margin-left: 16px;
     }
     .nav-menu {
         position: unset;
@@ -136,7 +156,7 @@ hr {
         header {
             padding: 0px 165px;
         }
-        button {
+        .get_invite {
             margin-left: 227px;
         }
     }
