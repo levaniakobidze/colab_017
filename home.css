@@ -37,7 +37,7 @@ h1 {
     line-height: 40px;
     letter-spacing: 3.33333px;
     color: #FFFFFF;
-    text-transform: uppercase;
+    
 }
 p {
     font-weight: 400;
@@ -92,7 +92,7 @@ p {
         width: 6px;
         height: 304px;
         background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
-        top: 245px;
+        top: 173px;
         left: 0px;
     }
     h1 {
@@ -100,7 +100,6 @@ p {
         font-size: 40px;
         line-height: 48px;
         letter-spacing: 4.16667px;
-        text-transform: uppercase;
         width: 387px;
     }
     .beauti-text h1 {
@@ -140,20 +139,24 @@ p {
         text-decoration: underline;
     }
 }
-/*stories section*/
+/*stories section mobile*/
 .stories-cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    
 }
 .stories-cards section {
     position: relative;
 }
 picture {
     position: relative;
+    
+    
 }
 section picture::before {
     content: "";
     position: absolute;
+    bottom: 0;
+    right: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -172,8 +175,7 @@ section picture::before {
     position: absolute;
     bottom: 40px;
     left: 33px;
-    /* width: 100%; */
-    /* padding: 0px 32px 0px 33px; */
+    width: 80%;
     z-index: 3;
 }
 .description h2 {
@@ -182,11 +184,12 @@ section picture::before {
     color: #ffffff;
 }
 .description p  {
+    display: block;
     margin-top: 4px;
-    opacity: 1;
     font-size: 13px;
     line-height: 17px;
     opacity: 1;
+    width: unset;
 }
 .description hr {
     background-color: #ffffff;
@@ -196,33 +199,78 @@ section picture::before {
 .description .text-arrow {
     padding: 0;
     justify-content: space-between;
-    gap: 177px;
+    
 }
 .hover-rectangle {
     margin: 0;
-    /* height: 6px; */
+    height: 6px;
     background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
-    display: block;
+    display: none;
 }
 
 
 
+/* Stories section for tablet*/
+@media (min-width: 768px) {
 
 
+.stories-cards {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.description {
+    left: 11%;
+    width: 78.75%;
+
+}
+.description hr {
+    display: block;
+}
+} 
 
 
-/*features three card section*/
-.cards_section {
+/* Stories section for desktop*/
+@media (min-width: 1440px) {
+
+
+    .stories-cards {
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    .description {
+        left: 11%;
+    
+    }
+    .description hr {
+        display: block;
+    }
+    section:hover {
+        opacity: 1;
+        transform: translateY(-30px);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .stories-cards section:hover .hover-rectangle {
+        display: block;
+    }
+    } 
+
+
+/*features three card section: mobile*/
+.features {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 64px 32px 91px 32px;
+    padding: 80px 32px 25px 33px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .card img {
@@ -258,6 +306,7 @@ section picture::before {
     text-align: center;
     color: #000000;
     margin-bottom: 16px;
+    letter-spacing: normal;
 }
 
 .card p {
@@ -269,9 +318,14 @@ section picture::before {
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.6;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
 }
 /*features six card section on tablet*/
+@media (min-width:768px) {
+    
+.features {
+    padding: 120px 155px 40px 156px;
+}
 .cards_section {
     padding: 112px 40px 114px 39px;
     display: grid;
@@ -279,10 +333,12 @@ section picture::before {
     column-gap: 13px;
     row-gap: 72px;
 }
-
+.card p {
+    margin-bottom: 80px;
+}
 .second_card_image_div {
-    margin-top: 19px;
-    margin-bottom: 19px; 
+    
+    margin-bottom: 18px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,14 +347,19 @@ section picture::before {
 .card {
     justify-content: unset;
 }
-
-.card p {
-    margin-bottom: 0px;
 }
+
  /*features six card section on desktop*/
- .cards_section {
-    padding: 160px 165px;
-    grid-template-columns: auto auto auto;
-    column-gap: 30px;
-    row-gap: 104px;
+@media (min-width:1440px) {
+ .features {
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .card p {
+    width: 350px;
+ }
+ .second_card_image_div {
+    margin-top: 18px;
+ }
+
 }

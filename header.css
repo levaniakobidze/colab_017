@@ -16,6 +16,7 @@ header {
 }
 .logo {
     cursor: none;
+
 }
 button {
     width: 310px;
@@ -31,6 +32,10 @@ button {
 }
 .get_invite {
     margin-bottom: 32px;
+}
+@keyframes disappear {
+    from {top: 72px;}
+    to {top:-325px}
 }
 .navbar { 
     display: flex;
@@ -66,18 +71,22 @@ button {
     
     position: absolute;
     padding-top: 32px;
-    Left: 100%;
-    top: 72px;
+    Left: 0px;
+    top: -100%;
     flex-direction: column;
     background-color: #ffffff;
     width: 100vw;
     text-align: center;
     /* transition: transform 0.3s ease-in-out; */
-    transition: 0.5s;
+    transition: 2s;
 }
 .nav-menu.visible {
     z-index: 2;
     left: 0px;
+    top: 72px;
+}
+.logo {
+    z-index: 3;
 }
 hr {
     width: 310px;
