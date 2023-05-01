@@ -15,7 +15,7 @@ header {
     padding: 0px 26px 0px 24px;   
 }
 .logo {
-    cursor: none;
+    cursor: pointer;
 
 }
 button {
