@@ -300,7 +300,13 @@ body {
     .features {
         flex-direction: row-reverse;
     }
-
+    .hero-image {
+      width: unset;
+    }
+    picture {
+      width: 273px;
+      display: block;
+    }
     .rectangle {
         height: 128px;
         width: 6px;
