@@ -318,6 +318,10 @@ body {
         width: 350px;
     }
 
+    .third {
+        align-self: flex-start;
+    }
+
     /*features backgound div on desktop*/
     .background-div {
         background-image: url(./assets/shared/desktop/bg-beta.jpg);
