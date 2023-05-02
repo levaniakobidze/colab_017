@@ -64,10 +64,13 @@ p {
 .beauti-text h1, .beauti-text p, .designed-text h1, .designed-text p, .beauti-text .text-arrow h3, .designed-text .text-arrow h3 {
     color: #000;
 }
+.beauti-text h1 {
+    width: 250px;
+}
 @media (min-width: 768px) {
     
     .intro-image img, .beauti-image img, .designed-image img {
-        width: unset;
+        /* width: unset; */
     }
     .intro, .designed-for {
         display: flex;
