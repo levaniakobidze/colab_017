@@ -1,190 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
-body {
-    font-family: 'DM Sans', sans-serif;
-    overflow: hidden;
-}
-html {
-    overflow-x: hidden;
-}
-header {
-    position: relative;
-    z-index: 2;
-    height: 72px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 26px 0px 24px;   
-}
-.logo {
-    cursor: auto;
-button {
-    width: 310px;
-    height: 48px;
-    background-color: #000000;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 2.5px;
-    border: none;
-}
-.get_invite {
-    margin-bottom: 32px;
-}
- /* @keyframes disappear {
-    from {top: 72px;}
-    to {top:-325px}
-} */
-.navbar { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.navbar ul {
-    list-style: none;
-}
-.nav-link {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 2.5px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-.nav-link a {
-    text-decoration: none;
-    color: #000000;
-}
-.nav-link a:hover {
-    cursor: pointer;
-    mix-blend-mode: normal;
-    opacity: 0.3;
-}
-.get_invite:hover {
-    cursor: pointer;
-    background-color: #dfdfdf;
-    color: #000000;
-}
-.nav-menu{
-    z-index: 2;
-    position: absolute;
-    padding-top: 32px;
-    Left: 0px;
-    top: -100%;
-    background-color: #ffffff;
-    width: 100vw;
-    text-align: center;
-    transition: 2s;
-  
-}
-.nav-menu.visible {
-    z-index: 2;
-    left: 0px;
-    top: 72px;
-}
-.shadow::after {
-    z-index: 0.5;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-/* .nav-menu.visible::after {
-    content: "";
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  } */
-.logo {
-    z-index: 3;
-}
-hr {
-    width: 310px;
-    height: 1px;
-    background: #000000;
-    mix-blend-mode: normal;
-    opacity: 0.25;
-    margin-bottom: 20px;
-    border: none;
-}
-.hamburger {
-    display: flex;
-    align-items: center;  
-}
-.hamburger img[alt=close-navigation] {
-    display: none;
-}
-.hamburger.visible .lines {
-    display: none;
-    transition: 0.3s
-}
-.hamburger.visible .close {
-    display: block;
-    transition: 0.3s
-}
-@media (min-width: 768px) {
-    header {
-        padding: 0px 40px 0px 39px;
-    }
-    .hamburger {
-        display: none;
-    }
-    hr {
-        display: none;
-    }
-    button {
-        width: 158px;
-        height: 40px;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 2px;
-    }
-    .get_invite {
-        margin: 0px;
-        margin-left: 16px;
-    }
-    .nav-menu {
-        position: unset;
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: max-content;
-        height: max-content;
-    }
-    .nav-link {
-        padding: 0px;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 2px;
-    }
-    .nav-link a {
-        padding-right: 37px;
-    }
-    @media (min-width: 1440px) {
-        header {
-            padding: 0px 165px;
-        }
-        .get_invite {
-            margin-left: 227px;
-        }
-    }
-} */
- */
-
+ 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 body {
     font-family: 'DM Sans', sans-serif;
@@ -287,14 +101,14 @@ hr {
 .intro {
     background-color: #000000;
 }
-.rectangle {
+#rectangle {
     position: absolute;
     width: 128px;
     height: 6px;
     background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
     top: 0px;
 }
-h1 {
+.h1 {
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
@@ -302,7 +116,7 @@ h1 {
     color: #FFFFFF;
     text-transform: uppercase;
 }
-p {
+.p {
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -311,7 +125,7 @@ p {
     opacity: 0.6;
     margin-top: 16px;
 }
-h3 {
+.h3 {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -385,7 +199,7 @@ h3 {
     .designed-text {
         padding: 160px 54px 159px 54px;
     }
-    .rectangle {
+    #rectangle {
         position: absolute;
         width: 6px;
         height: 304px;
@@ -393,7 +207,7 @@ h3 {
         top: 245px;
         left: 0px;
     }
-    h1 {
+    .h1 {
         font-weight: 700;
         font-size: 40px;
         line-height: 48px;
@@ -404,7 +218,7 @@ h3 {
     .beauti-text h1 {
         width: 300px;
     }
-    p {
+    .p {
         margin-top: 21px;
         width: 387px;
     }

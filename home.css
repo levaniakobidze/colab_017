@@ -24,7 +24,7 @@ html {
     background-color: #000000;
     
 }
-.rectangle {
+#rectangle {
     position: absolute;
     width: 128px;
     height: 6px;
@@ -90,7 +90,7 @@ p {
     .designed-text {
         padding: 160px 54px 159px 54px;
     }
-    .rectangle {
+    #rectangle {
         position: absolute;
         width: 6px;
         height: 304px;
@@ -123,7 +123,7 @@ p {
     button {
         margin-left: 227px;
     }
-    .rectangle {
+    #rectangle {
         top: 173px;
     }
     .intro-text {
