@@ -484,28 +484,99 @@ body {
     .arrow_button button {
         margin: 16px;
     }
+  }
 
-}
 
-/* Comparison table CSS for different subscription plans on tablet */
-@media (min-width:768px) {
-    .compare {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        font-size: 40px;
-        line-height: 48px;
-        letter-spacing: 4.16667px;
-        color: #000000;
-        padding: 112px 0px 64px 0px;
-        margin: auto;
+    /* <!-- Comparison table for mobile only --> */
+
+
+      .tab-desk-table {
+        display: none;
       }
+      .mobile-table {
+          border-collapse: collapse;
+          margin: 42px auto 64px auto;
+          width: 318px;
+          
+        }
+      
+        .comparison-table th {
+          padding: 0px 23px 21px 23px;
+        }
+        .comparison-table td {
+          padding: 22px;
+        }
+        th {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 2px;
+          color: #000000;
+        }
+  
+        .caption {
+          border-bottom: 1px solid #000;
+          padding-bottom: 23px;
+        }
+        .plan {
+          font-size: 10px;
+          line-height: 13px;
+          letter-spacing: 1.66667px;
+          color: #000000;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+          padding-bottom: 7px;
+          width: calc(100%/3); 
+  
+          
+        }
+        .checkmark {
+          border-bottom: 1px solid #ddd;
+        }
+        .checkmark td {
+          padding-bottom: 22.5px;
+        }
+        
+        .what {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 2px;
+          color: #000000;
+          text-align: center;
+          text-align: start;
+          padding: 22.5px 0px 15.5px 0px;
+          
+        }
+      
+  
+
+/* Comparison table for tablet */
+@media (min-width:768px) {
+  .tab-desk-table {
+    display: block;
+  }
+.mobile-table {
+  display: none;
+}
+.compare {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    color: #000000;
+    padding: 112px 0px 64px 0px;
+    margin: auto;
+    }
 table {
     border-collapse: collapse;
     width: 689px;
-    height: 550px;
+    
     margin: auto;
-    margin-bottom: 160px;
+    margin-bottom: 112px;
   }
 
   .comparison-table th {
@@ -540,9 +611,13 @@ table {
     border-bottom: 1px solid #ddd;
   }
 }
+
+
 /* Comparison table CSS for different subscription plans on desktop */
 @media (min-width:1440px) {
-
+  .mobile-table {
+    display: none;
+  }
 table {
     /* border-collapse: collapse; */
     width: 731px;
@@ -556,39 +631,11 @@ table {
     padding: 21.75px;
   }
   
-  /* .comparison-table th {
-    background-color: #ffffff;
-  } */
-  /* hr {
-    width: 371px;
-    border: none;
-    height: 1px;
-    background-color: #000;
-  } */
-  /* .comparison-table tbody tr:first-child {
-    border-top: none;
-  } */
-  /* td {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 2px;
-    color: #000000;
-    text-align: center;
-  } */
+
   .left-functions {
     text-align: start;
     display: inline;
   }
-  /* th {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 2px;
-    color: #000000;
-  } */
-
-  
   .tb-features {
     border-bottom: 1px solid #000;
   }
