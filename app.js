@@ -13,22 +13,6 @@ addEventListener("click", () => {
     }))
 })
 
-// document.querySelectorAll(".nav-link").forEach(n => n.
-// addEventListener("click", () => {
-//     hamBurger.classList.remove("visible");
-//     navMenu.classList.remove("visible");
-//     }))
-//     const hamburger = document.querySelector('.hamburger');
-//     const navMenu = document.querySelector('.nav-menu');
-    
-//     hamburger.addEventListener('click', () => {
-//       if (navMenu.classList.contains('visible')) {
-//         navMenu.classList.remove('visible');
-//       } else {
-//         navMenu.classList.add('visible');
-//       }
-//     });
-
 /*pricing js*/
 const switchButton = document.querySelector('#toggleAll');
 
